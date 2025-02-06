@@ -20,9 +20,11 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      working-directory: ./
 
     - name: Build project
       run: npm run build
+      working-directory: ./
 
   deploy:
     runs-on: ubuntu-latest
