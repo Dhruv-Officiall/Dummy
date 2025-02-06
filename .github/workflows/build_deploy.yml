@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
 
     - name: Install Parasoft CLI
       run: |
         # Replace with actual installation command for Parasoft CLI
-        curl -L -o parasoft.zip "https://example.com/parasoft.zip"
+        curl -L -o parasoft.zip "https://correct-url.com/parasoft.zip"
         unzip parasoft.zip -d parasoft
         export PATH=$PATH:$(pwd)/parasoft
 
