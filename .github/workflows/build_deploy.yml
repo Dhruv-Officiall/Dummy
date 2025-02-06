@@ -12,7 +12,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      
+
+    - name: Run Parasoft scan
+      run: |
+        # Assuming Parasoft CLI is installed and configured
+        parasoft scan --project .
+
     - name: Create zip file
       run: zip -r repo.zip .
       id: create_zip
